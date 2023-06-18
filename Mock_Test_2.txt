@@ -1,0 +1,30 @@
+'''
+Given a non-negative integer x, return the square root of x rounded down 
+to the nearest integer. The returned integer should be non-negative as 
+well. You must not use any built-in exponent function or operator.
+
+'''
+def findSquareRoot(n):
+    i=1
+    squeareRoot=0
+    while(i<n):
+        #print(i)
+        if(round(i*i,4) == n):
+            squeareRoot = i
+            break;
+        elif(i*i > n):
+            squeareRoot = i-1
+            break;
+        i+=0.1   
+    print(round(squeareRoot))
+
+n=3
+findSquareRoot(n)
+
+
+
+
+
+
+
+
