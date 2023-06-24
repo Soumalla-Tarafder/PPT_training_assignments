@@ -41,6 +41,48 @@ a.pop()
 
 
 
+'''
+Implement a queue using a list in Python. Include the necessary methods 
+such as enqueue, dequeue, and isEmpty.
+
+'''
+class queue:
+    def __init__(self):
+        self.l=[]
+    
+    def enqueue(self,val):
+        self.l.append(val)
+        print(self.l)
+        
+    def is_empty(self):
+        if len(self.l) == 0:
+            print("True")
+            return True
+        else:
+            print("False")
+            return False
+    def dequeue(self):
+        
+        if len(self.l)!=0:
+            self.l.pop(0)
+            print(self.l)
+        else:
+            print("UnderFlow,No Data To Dequeue")
+            
+a=queue()
+
+a.is_empty()
+
+a.enqueue(5)
+a.enqueue(7)
+
+a.dequeue()
+
+a.is_empty()
+a.dequeue()
+a.dequeue()
+
+
 
 
 
